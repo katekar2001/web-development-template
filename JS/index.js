@@ -1,0 +1,12 @@
+$(document).ready(()=>{
+    $('.navbar-toggler').click(()=>{ 
+        $('.collapse').toggle(500);
+        $('.fa-bars').toggle();
+        $('.fa-xmark').toggle();
+    }) 
+    $('.nav-link').click(()=>{
+        $('.collapse').hide(800);
+        $('.fa-bars').toggle();
+        $('.fa-xmark').toggle();
+    })
+});

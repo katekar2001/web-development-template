@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-padding: 4.3rem;
+    scroll-behavior: smooth;
+}
+/* -------------------- navbar CSS -------------------*/
+.navbar{
+    padding-top: 7px;
+    background-color: rgba(0,0,0,0.9);
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.navbar-brand{
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    transition: 0.5s ease;
+}
+.navbar-toggler{
+    background-color: white;
+    margin-right:15px;
+    padding: 0px 4px;
+    border: 2px solid red;
+}
+.navbar-toggler-icon{
+    background-image: none;
+}
+.navbar-toggler-icon .fa-xmark{
+    display: none;
+}
+.navbar-nav{
+    margin-right: 50px;
+}
+.nav-item{
+    margin: 0px 10px;
+}
+.nav-link{
+    color: #d9d9d9;
+    font-weight: bold;
+    transition: 0.5s ease;
+    position: relative;
+    font-size: 18px;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 0.5px;
+}
+.navbar-brand:hover{
+    color: red;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom:3px;
+    left: 0px;
+    transition: 0.5s ease;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+
+/* ------------------- Slider CSS -------------------------*/
+
+#banner{
+    height: 100vh;
+    background-image: url(../Images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    flex-direction: column;
+}
+
+/* ------------------ About CSS -------------------------- */
+
+/* ----------------- Services CSS ---------------------- */
+
+.card{
+    background-color: #f2f2f2;
+}
+.card-row2{
+    margin-top: 33px;
+}
+.card:hover{
+    border: 0px;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 12px 1px rgba(153,153,153,1);
+}
+.link{
+    text-decoration: none;
+    color: #716565;
+}
+/* ---------------- Contact CSS ----------------------- */
+
+.map{
+    padding: 0px;
+}
+iframe{
+    height: 400px;
+    width: 100%;
+    box-shadow: 0px 0px 12px 1px rgba(153,153,153,1);
+}
+.form{
+    border: 0px solid rgb(206, 212, 218);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 12px 1px rgba(153,153,153,1);
+    background-color: #f2f2f2;
+}
+.location{
+    justify-content: space-between;
+}
+
+@media screen and (max-width:900px){
+    .navbar-brand{
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .wrapper h4{
+        text-align: center;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .card-row2{
+        margin-top: 0px;
+    }
+    .nav-link::after{
+        content:'';
+        width: 0%;
+    }
+    .nav-link:hover::after{
+        width: 0%;
+    }
+    html{
+        scroll-padding: 3.9rem;
+    }
+    .collapse{
+        height: 100vh;
+        background-color: transparent;
+    }
+    .navbar-nav{
+        display: flex;
+        align-items: center;
+        /* justify-content:center; */
+        margin: auto;
+        height: 100%;
+        padding-top: 50%;
+    }
+    .nav-link{
+        padding: 2px 50px;
+        margin: 10px 0px;
+    }
+    
+}
