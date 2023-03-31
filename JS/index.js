@@ -2,8 +2,8 @@ function sendForm(){
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let message = document.getElementById('message').value;
-    alert("Message sent successfully.");
     alert(`Name : ${name} Email : ${email} Message : ${message}`);
+    alert("Message sent successfully.");
 }
 
 $(document).ready(()=>{
