@@ -113,7 +113,29 @@ html{
 }
 .project:hover{
     background-color: rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 12px 1px rgb(97, 96, 96);
     /* box-shadow: 0px 0px 12px 1px rgba(153,153,153,1); */
+    cursor: pointer;
+}
+.web-design{
+    background-image: url(../Images/web-design.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.web-development{
+    background-image: url(../Images/web-development.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.ecommerce-development{
+    background-image: url(../Images/Ecommerce-Website-Development.png);
+    background-position: center;
+    background-size: cover;
+}
+.android-development{
+    background-image: url(../Images/android-development.jpg);
+    background-position: right;
+    background-size: cover;
 }
 /* ---------------- Contact CSS ----------------------- */
 
