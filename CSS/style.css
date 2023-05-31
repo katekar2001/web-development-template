@@ -19,9 +19,10 @@ html{
 .navbar-brand{
     margin-left: 60px;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     transition: 0.5s ease;
+    font-family: 'poppins',sans-serif;
 }
 .navbar-toggler{
     background-color: white;
@@ -46,7 +47,7 @@ html{
     font-weight: bold;
     transition: 0.5s ease;
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'poppins',sans-serif;
     letter-spacing: 0.5px;
 }
@@ -107,16 +108,19 @@ html{
     font-size: 40px;
     margin-bottom: 12px;
 }
+/* ---------------------- Projects CSS -------------------------- */
 .project{
     height: 350px;
     background-color: #f2f2f2;
     border: 1px solid rgb(223, 220, 220);
     margin: 15px 15px;
+    transition: transform 0.2s;
 }
 .project:hover{
-    box-shadow: 0px 0px 12px 1px rgb(97, 96, 96);
+    /*box-shadow: 0px 0px 10px 1px rgb(192, 191, 191);*/
     /* box-shadow: 0px 0px 12px 1px rgba(153,153,153,1); */
     cursor: pointer;
+    transform: scale(1.03);
 }
 .web-design{
     background-image: url(../Images/web-design.jpg);

@@ -13,7 +13,9 @@ $(document).ready(()=>{
         $('.fa-xmark').toggle();
     }) 
     $('.nav-link').click(()=>{
-        $('.collapse').hide(800);
+        if(screen.width<=901){
+            $('.collapse').hide(800);
+        }
         $('.fa-bars').toggle();
         $('.fa-xmark').toggle();
     })
